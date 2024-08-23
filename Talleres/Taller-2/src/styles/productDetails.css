@@ -1,0 +1,25 @@
+.productDetails-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.productDetails-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.productDetails-container p {
+  text-align: left;
+}
+.price {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.button-details {
+  background-color: #242424;
+  color: #f1efef;
+}

@@ -1,0 +1,24 @@
+.productItem-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1efef;
+  color: #242424;
+  padding: 1em;
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+  height: 400px;
+  justify-content: space-between;
+}
+.productItem-container button {
+  background-color: #242424;
+  color: #f1efef;
+}
+.productItem-image-container {
+  width: 100%;
+  height: 200px;
+}
+.productItem-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
