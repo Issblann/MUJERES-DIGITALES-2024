@@ -10,7 +10,7 @@ export const ProductItem = ({ name, price, image, onViewDetails }) => {
       </div>
 
       <div>
-        <p>{`Precio: ${price}`}</p>
+        <p>{`Precio: $ ${price}`}</p>
       </div>
       <button onClick={onViewDetails}>Ver más</button>
     </div>

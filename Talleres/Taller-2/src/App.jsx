@@ -8,9 +8,24 @@ function App() {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const cartProducts = [
-    { name: 'Producto 1', price: 100 },
-    { name: 'Producto 2', price: 200 },
-    { name: 'Producto 3', price: 86 },
+    {
+      id: 1,
+      name: 'Pantalones elegante mujer',
+      price: '119.000',
+      img: 'https://http2.mlstatic.com/D_NQ_NP_870188-CBT70272111634_072023-O.webp',
+    },
+    {
+      id: 2,
+      name: 'Vestido negro fiesta mujer',
+      price: '210.000',
+      img: 'https://ae-pic-a1.aliexpress-media.com/kf/Sb0ebef7e28114727b32bac73a9f31225e.jpg_640x640Q90.jpg_.webp',
+    },
+    {
+      id: 3,
+      name: 'Blusa blanca botones mujer',
+      price: '79.900',
+      img: 'https://m.media-amazon.com/images/I/61jyDViMqiL.jpg',
+    },
   ];
 
   const products = [
@@ -75,7 +90,8 @@ function App() {
     setSelectedProduct(null);
   };
   const addProductToCart = () => {
-    console.log('Producto seleccionado');
+    alert('Producto agregado al carrito');
+    setSelectedProduct(null);
   };
   return (
     <main>
@@ -99,6 +115,7 @@ function App() {
               description={selectedProduct.description}
               image={selectedProduct.img}
               category={selectedProduct.category}
+              addProductToCart={addProductToCart}
             />
           </div>
         </div>

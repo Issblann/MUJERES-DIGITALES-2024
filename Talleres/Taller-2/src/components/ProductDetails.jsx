@@ -7,6 +7,7 @@ export const ProductDetails = ({
   description,
   image,
   category,
+  addProductToCart,
 }) => {
   return (
     <section className="productDetails-section">
@@ -15,11 +16,13 @@ export const ProductDetails = ({
         <img src={image} alt={name} />
       </div>
       <div className="productDetails-container">
-        <p className="price">{`Precio: ${price}`}</p>
+        <p className="price">{`Precio: $ ${price}`}</p>
         <p>{description}</p>
-        <p>{`Categoria: ${category}`}</p>
+        <p>{`Categoría: ${category}`}</p>
       </div>
-      <button className="button-details">Agregar al Carrito</button>
+      <button onClick={() => addProductToCart()} className="button-details">
+        Agregar al Carrito
+      </button>
     </section>
   );
 };
