@@ -1,7 +1,7 @@
-const COLUMNS = [
-  { id: 1, name: 'Letra' },
-  { id: 2, name: 'Nombre' },
-  { id: 3, name: 'Animal' },
-  { id: 4, name: 'Color' },
-  { id: 5, name: 'País' },
+export const COLUMNS = [
+  { id: 0, name: 'Letra' },
+  { id: 1, name: 'Nombre' },
+  { id: 2, name: 'Animal' },
+  { id: 3, name: 'Color' },
+  { id: 4, name: 'País' },
 ];

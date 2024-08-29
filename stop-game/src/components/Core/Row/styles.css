@@ -1,0 +1,32 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.input-field {
+  flex: 1;
+  padding: 0.5em;
+  margin-right: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.letter-field {
+  flex: 1;
+  padding: 10px;
+  margin-right: 1.5em;
+  border-radius: 5px;
+  background-color: #ff5722;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
