@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { COLUMNS } from '../../constants';
 import Column from '../Core/Column';
 import Row from '../Core/Row';
@@ -6,22 +6,18 @@ import { getRandomLetter } from '../../utils';
 import './styles.css';
 export const Game = () => {
   const [rows, setRows] = useState([]);
-  const [currentLetter, setCurrentLetter] = useState('');
   const [inputs, setInputs] = useState({});
-
-  useEffect(() => {
-    const letter = getRandomLetter();
-    setCurrentLetter(letter);
-  }, []);
+  const [currentLetter, setCurrentLetter] = useState('');
 
   const handleAddRow = () => {
-    setRows([...rows, {}]);
+    const letter = getRandomLetter();
+    setCurrentLetter(letter);
+    setRows([...rows, { letter }]);
   };
 
   const printInputs = () => {
     console.log(inputs);
   };
-
   return (
     <div className="game-container">
       <h1>Juego de Stop</h1>
@@ -33,11 +29,11 @@ export const Game = () => {
       </div>
 
       <div className="rows-container">
-        {rows.map((_, index) => (
+        {rows.map((row, index) => (
           <Row
             key={index}
             columns={COLUMNS}
-            currentLetter={currentLetter}
+            currentLetter={row.letter}
             inputs={inputs}
             setInputs={setInputs}
           />
