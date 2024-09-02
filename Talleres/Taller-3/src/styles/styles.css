@@ -1,0 +1,49 @@
+.calculator-base {
+  display: flex;
+  flex-direction: column;
+  background: #e2eefc;
+  border-radius: 10px;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 20px;
+  gap: 2em;
+  width: 100%;
+}
+.calculator-base p {
+  text-align: left;
+}
+.container-temperatures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.temperatures {
+  width: 80%;
+  text-align: left;
+}
+.input-container {
+  border: 1px solid #868685;
+
+  border-radius: 6px;
+  margin-top: 1em;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.input {
+  padding: 10px;
+  font-size: larger;
+}
+
+@media (max-width: 768px) {
+  .calculator-base {
+    flex-direction: column;
+    gap: 1em;
+  }
+  h1 {
+    font-size: 1.5em !important;
+  }
+}
