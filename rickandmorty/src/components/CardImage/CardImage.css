@@ -1,0 +1,31 @@
+.CardImage {
+  width: 230px;
+  height: 280px;
+  border-radius: 10px;
+  background: #1e293b;
+  border: 1px solid #3cb7f4;
+  padding: 2em 1.5em;
+}
+
+.CardImage-Img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.CardImage-Info {
+  color: #f0f9ff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.CardImage-Title {
+  font-size: 1.5rem;
+  margin-top: 0.7em;
+}
+
+p {
+  color: #d2dfe5;
+  margin: 0;
+  padding: 0;
+}

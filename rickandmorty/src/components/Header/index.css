@@ -1,0 +1,32 @@
+.Header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Header-Title {
+  font-size: 3rem;
+  color: #bbe4fc;
+  margin-top: 30px;
+}
+.Header-Nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4em;
+}
+
+.Header-Nav-li {
+  list-style-type: none;
+}
+
+.Header-Nav-a {
+  text-decoration: none;
+  color: #3cb7f4;
+  margin: 0 10px;
+}
+
+.Header-Nav-a:hover {
+  color: #33ff6b;
+}
