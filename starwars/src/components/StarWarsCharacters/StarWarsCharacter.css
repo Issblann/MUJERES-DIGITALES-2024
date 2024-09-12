@@ -1,0 +1,61 @@
+.characters-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Star Jedi', sans-serif;
+    font-size: 3em;
+    color: #ffe81f;
+    text-shadow: 3px 3px 0 #000;
+}
+
+.character-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.character-card {
+    background-color: #282c34;
+    color: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.character-card:hover {
+    transform: scale(1.05);
+}
+
+.character-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #ffe81f;
+}
+
+.character-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.character-info p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .character-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}

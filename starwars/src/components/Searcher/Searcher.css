@@ -1,0 +1,20 @@
+.searcher-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  width: 100%;
+}
+
+.searcher-container input {
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+.searcher-container input:focus {
+  outline: none;
+}
