@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import PatternDivider from './assets/pattern-divider-mobile.svg';
+import PatternDividerDesktop from './assets/pattern-divider-desktop.svg';
+import IconDice from './assets/icon-dice.svg';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+    <main className="container">
+      <small className="title-small">ADVICE #117</small>
+      <div className="container-title-divider">
+        <p className="title-quote">
+          "It is easy to sit up and take notice, what's difficult is getting up
+          and taking action."
         </p>
+
+        <img
+          className="svg-divider"
+          src={PatternDivider}
+          alt="PatternDivider"
+        />
+        <img
+          className="svg-divider-desktop"
+          src={PatternDividerDesktop}
+          alt="PatternDividerDesktop"
+        />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+      <button className="button-dice">
+        <img src={IconDice} alt="icon-dice" />
+      </button>
+    </main>
+  );
 }
 
-export default App
+export default App;
