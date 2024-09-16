@@ -2,8 +2,8 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, minmax(260px, 1fr));
-
   margin: 0 auto;
+  justify-items: center;
   max-width: 1490px;
 }
 
