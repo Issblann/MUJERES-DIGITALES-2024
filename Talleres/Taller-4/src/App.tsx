@@ -29,7 +29,7 @@ function App() {
   };
   return (
     <main className="container">
-      <small className="title-small">ADVICE #117</small>
+      <small className="title-small">ADVICE #{data?.slip.id}</small>
       <div className="container-title-divider">
         {loading ? (
           <p className="title-quote">
