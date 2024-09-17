@@ -13,12 +13,14 @@
 
 .container {
   background: hsl(217, 19%, 24%);
-  border-radius: 10px;
+  border-radius: 16px;
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2rem;
   width: 45%;
+  max-width: 580px;
   margin: 0 auto;
   position: relative;
   min-height: 340px;
@@ -31,11 +33,12 @@
   height: 100%;
   width: 83%;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 .title-small {
   color: hsl(150, 100%, 66%);
   letter-spacing: 5px;
-  font-size: 10px;
+  font-size: 14px;
 }
 .title-quote {
   font-size: 28px;
@@ -56,10 +59,23 @@
   padding: 2rem;
   border: none;
   position: absolute;
-  bottom: -40px;
-  left: 45%;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
 }
 
+.button-dice:hover {
+  box-shadow: 0 0 10px hsl(150, 100%, 66%), 0 0 7px hsl(150, 100%, 66%),
+    0 0 30px hsl(150, 100%, 66%);
+  transform: translateX(-50%) scale(1.1);
+}
+
+.button-dice:disabled {
+  background: hsl(150, 100%, 66%, 0.5);
+  cursor: not-allowed;
+}
 .svg-divider {
   display: none;
 }
@@ -77,8 +93,8 @@
     font-size: 24px;
     width: 100%;
   }
-  .button-dice {
-    left: 40%;
+  .title-small {
+    font-size: 10px;
   }
   .svg-divider-desktop {
     display: none;
