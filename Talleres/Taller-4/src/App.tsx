@@ -4,6 +4,7 @@ import IconDice from './assets/icon-dice.svg';
 import './App.css';
 import { useFetch } from './Hook/useFetch';
 import { useState } from 'react';
+import Loader from './assets/loader.svg';
 
 type Advice = {
   slip: {
@@ -20,9 +21,9 @@ function App() {
   );
 
   if (error) return <p>{error.message}</p>;
+
   const advice = data?.slip?.advice;
-  console.log(advice);
-  console.log(loading);
+
   const handleNewAdvice = () => {
     setRefreshKey((prev) => prev + 1);
   };
@@ -31,7 +32,9 @@ function App() {
       <small className="title-small">ADVICE #117</small>
       <div className="container-title-divider">
         {loading ? (
-          <p className="title-quote">Loading...</p>
+          <p className="title-quote">
+            <img width={60} height={60} src={Loader} alt="Loader" />
+          </p>
         ) : (
           <p className="title-quote">{advice}</p>
         )}
