@@ -1,0 +1,39 @@
+.advice__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  height: 100%;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.advice__content-quote-loader {
+  margin: 0 auto;
+}
+.advice__content-quote {
+  font-size: 28px;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.advice__content-divider {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .advice__content {
+    gap: 1rem;
+    width: 100%;
+  }
+  .advice__content--quote {
+    font-size: 24px;
+    width: 100%;
+  }
+  .advice__content-divider-desktop {
+    display: none;
+  }
+  .advice__content-divider {
+    display: block;
+  }
+}

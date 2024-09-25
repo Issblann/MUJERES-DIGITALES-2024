@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 
-.container {
+.advice {
   background: hsl(217, 19%, 24%);
   border-radius: 16px;
   padding: 2rem 1rem;
@@ -19,87 +19,30 @@
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  width: 45%;
+  width: 100%;
   max-width: 580px;
   margin: 0 auto;
   position: relative;
   min-height: 340px;
 }
 
-.container-title-divider {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  height: 100%;
-  width: 83%;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-.title-small {
+.advice__id {
   color: hsl(150, 100%, 66%);
   letter-spacing: 5px;
   font-size: 14px;
 }
-.title-quote {
-  font-size: 28px;
-  width: 90%;
-  text-align: center;
-  margin: 0 auto;
-}
 
-.button-dice {
-  width: 50px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  background: hsl(150, 100%, 66%);
-  border-radius: 100%;
-  padding: 2rem;
-  border: none;
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  cursor: pointer;
+@media (min-width: 1024px) {
+  .advice {
+    width: 45%;
+  }
 }
-
-.button-dice:hover {
-  box-shadow: 0 0 10px hsl(150, 100%, 66%), 0 0 7px hsl(150, 100%, 66%),
-    0 0 30px hsl(150, 100%, 66%);
-  transform: translateX(-50%) scale(1.1);
-}
-
-.button-dice:disabled {
-  background: hsl(150, 100%, 66%, 0.5);
-  cursor: not-allowed;
-}
-.svg-divider {
-  display: none;
-}
-
 @media (max-width: 768px) {
-  .container {
+  .advice {
     min-height: 300px;
     width: 100%;
   }
-  .container-title-divider {
-    gap: 1rem;
-    width: 100%;
-  }
-  .title-quote {
-    font-size: 24px;
-    width: 100%;
-  }
-  .title-small {
+  .advice__id {
     font-size: 10px;
-  }
-  .svg-divider-desktop {
-    display: none;
-  }
-  .svg-divider {
-    display: block;
   }
 }

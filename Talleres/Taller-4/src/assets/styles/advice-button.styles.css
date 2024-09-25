@@ -1,0 +1,29 @@
+.advice__button {
+  width: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: hsl(150, 100%, 66%);
+  border-radius: 100%;
+  padding: 2rem;
+  border: none;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.advice__button:hover {
+  box-shadow: 0 0 10px hsl(150, 100%, 66%), 0 0 7px hsl(150, 100%, 66%),
+    0 0 30px hsl(150, 100%, 66%);
+  transform: translateX(-50%) scale(1.1);
+}
+
+.advice__button:disabled {
+  background: hsl(150, 100%, 66%, 0.5);
+  cursor: not-allowed;
+}
