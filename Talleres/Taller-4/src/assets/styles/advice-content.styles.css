@@ -17,6 +17,11 @@
   margin: 0 auto;
 }
 
+.advice__content-dividers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .advice__content-divider {
   display: none;
 }

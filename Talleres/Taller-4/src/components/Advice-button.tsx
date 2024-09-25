@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import IconDice from '../assets/icon-dice.svg';
 import '../assets/styles/advice-button.styles.css';
 interface AdviceButtonProps {

@@ -18,21 +18,24 @@ export const AdviceContent: FC<AdviceContentProps> = ({ loading, advice }) => {
           height={60}
           src={Loader}
           alt="Loader"
+          loading="lazy"
         />
       ) : (
         <p className="advice__content-quote">{advice}</p>
       )}
 
-      <img
-        className="advice__content-divider"
-        src={PatternDivider}
-        alt="PatternDivider"
-      />
-      <img
-        className="advice__content-divider-desktop"
-        src={PatternDividerDesktop}
-        alt="PatternDividerDesktop"
-      />
+      <figure className="advice__content-dividers">
+        <img
+          className="advice__content-divider"
+          src={PatternDivider}
+          alt="PatternDivider"
+        />
+        <img
+          className="advice__content-divider-desktop"
+          src={PatternDividerDesktop}
+          alt="PatternDividerDesktop"
+        />
+      </figure>
     </div>
   );
 };
